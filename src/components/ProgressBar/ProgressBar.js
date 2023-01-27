@@ -7,16 +7,16 @@ import VisuallyHidden from '../VisuallyHidden';
 
 const SIZES = {
   small: {
-    height: '8px',
-    borderRadius: '4px',
+    '--height': '8px',
+    '--borderRadius': '4px',
   },
   medium: {
-    height: '12px',
-    borderRadius: '4px',
+    '--height': '12px',
+    '--borderRadius': '4px',
   },
   large: {
-    height: '24px',
-    borderRadius: '8px',
+    '--height': '24px',
+    '--borderRadius': '8px',
   }
 }
 
@@ -28,8 +28,8 @@ const Bar = styled.div`
 
 const Track = styled.div`
   background-color: ${COLORS.transparentGray15};
-  height: 12px;
-  border-radius: 4px;
+  height: var(--height);
+  border-radius: var(--borderRadius);
   box-shadow: inset 0 2px 4px 0 ${COLORS.transparentGray35};
   overflow: hidden;
 `
